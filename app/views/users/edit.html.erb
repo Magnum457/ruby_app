@@ -1,6 +1,14 @@
-<h1>Editing User</h1>
+<div class="ui middle aligned center aligned grid">
+    <div class="four wide column">
+        <h2 class="ui teal header">
+            <div class="content">Informe seus dados</div>
+        </h2>
+        
+        <%= render 'form', user: @user %>
 
-<%= render 'form', user: @user %>
-
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+        <div class="ui message">
+            <%= link_to "Mostrar", @user %> |
+            <%= link_to "Voltar", users_path %>
+        </div>
+    </div>
+</div>
